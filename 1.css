@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    background: linear-gradient(to right, #fcfbf7 0%, #f4ece1 100%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.header-logo-image {
+    margin: 0;
+}
+
+.header-menu {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header-menu-link {
+    font-size: 16px;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    border-radius: 30px;
+    background: rgba(255, 249, 240, 0.6);
+    box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.header-search-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #909090;
+}
+
+.header-search-left input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 120px;
+}
+
+.header-search-line {
+    width: 1px;
+    height: 30px;
+    background: rgba(148, 140, 140, 0.4);
+}
+
+.header-search-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.header-search-reddot {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 16px;
+    height: 16px;
+    background: #EC2633;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.main-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-left-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 100px;
+    color: #FF7E00;
+}
+
+.main-subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2F2F2F;
+}
+
+.main-left-txt {
+    color: #909090;
+    max-width: 500px;
+}
+
+.main-left-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.main-left-buttons-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F2F2F;
+    color: white;
+    width: 160px;
+    height: 55px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-left-buttons-play {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.main-left-buttons-play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFF8F0;
+}
+
+.main-left-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main-left-reviews-stars {
+    color: #FEBB41;
+}
+
+.main-left-reviews-txt {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-left-reviews-txt-sub {
+    font-size: 14px;
+    color: #909090;
+}
+
+.main-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-right-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .main-title {
+        font-size: 70px;
+    }
+
+    .main-subtitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-menu {
+        justify-content: center;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-left {
+        align-items: center;
+    }
+
+    .main-left-txt {
+        max-width: 100%;
+    }
+
+    .main-right-image {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 50px;
+    }
+
+    .main-subtitle {
+        font-size: 24px;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-search {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main-left-buttons {
+        flex-direction: column;
+    }
+}
